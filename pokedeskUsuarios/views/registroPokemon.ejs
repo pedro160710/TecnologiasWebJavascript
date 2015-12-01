@@ -1,0 +1,41 @@
+<div class="container">
+    <form action="/crearPokemon" enctype="multipart/form-data" method="post" accept-charset="utf-8" class="form-pokemon">
+        <div>
+            <label> Nombre *: </label>
+            <input type="text" name="nombre" class="form-control" required/>
+            <!--el mismo nombre de los atributos del modelo-->
+        </div>
+        <div>
+            <label> Tipo *: </label>
+            <input type="text" name="tipo" class="form-control" required/>
+            <!--el mismo nombre de los atributos del modelo-->
+        </div>
+        <div>
+            <label> Habilidad Especial : </label>
+            <input type="text" name="habilidadEspecial" class="form-control" />
+            <!--el mismo nombre de los atributos del modelo-->
+        </div>
+        <div>
+            <label> Numero de pokemon *: </label>
+            <input type="text" name="numeroPokemon" class="form-control" required/>
+            <!--el mismo nombre de los atributos del modelo-->
+        </div>
+       <!-- <div>
+            <label>Owner *: </label>
+            <input type="text" name="owner" class="form-control" />
+
+        </div>-->
+
+
+        <!-- <form action="/subirFoto" enctype="multipart/form-data" method="post">-->
+        <input type="file" name="fotoPokemon">
+        
+
+        <input type="submit" value="Submit">
+
+
+
+    </form>
+
+
+</div>

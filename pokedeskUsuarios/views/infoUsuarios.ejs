@@ -1,0 +1,30 @@
+<h2>Usuarios</h2>
+<div class="container">
+    <ul>
+        <% for(var i=0; i<cuentas.length; i++) {%>
+            <dev>
+                <li>
+                    <label>Nombre: </label>
+                    <%= cuentas[i].nombre %>
+                        <label>Usuario: </label>
+                        <%= cuentas[i].usuario %>
+                </li>
+
+                <ul>
+                    <% for(var j=0; j<cuentas[i].misPokemon.length; j++) {%>
+                        <li>
+                            <%= cuentas[i].misPokemon[j].nombre %>
+                                <img src="images/<%= cuentas[i].misPokemon[j].url %>" width="150" height="150">
+                        </li>
+                        <% } %>
+
+                </ul>
+
+            </dev>
+            <% } %>
+
+
+
+    </ul>
+
+</div>
